@@ -11,12 +11,20 @@
   align-items: flex-start;
 }
 
+.big-card__photo > img {
+  width: 100%;
+  min-width: 400px;
+}
+
 .big-card__title > h1 {
   margin-top: 15px;
   font-size: 20px;
 }
 
-.big-card__description > p {
+.big-card__description {
   margin-top: 10px;
+}
+
+.big-card__description > p > a {
   color: grey;
 }
