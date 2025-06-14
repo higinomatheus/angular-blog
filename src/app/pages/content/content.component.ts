@@ -13,11 +13,11 @@ export class ContentComponent implements OnInit {
     photoCover: string = "https://lumiere-a.akamaihd.net/v1/images/iron-man_dft_m_db79b94b.jpeg";
     title: string = "MINHA NOTÍCIA";
     description: string = "It works!";
-    id: number = 0;
+    private id: string | null = "0";
 
     constructor(private route: ActivatedRoute, private marvelService: MarvelService){
       this.route.paramMap.subscribe((value) => {
-        this.id = Number.parseInt(value?.get('id') ?? "0");
+        this.id = value.get('id');
       })
     }
 

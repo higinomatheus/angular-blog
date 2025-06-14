@@ -27,7 +27,7 @@ export class MarvelService {
 		return this.http.get(`${this.baseUrl}/characters`, { params });
 	}
 
-	getCharacter(id: number = 1011334) {
+	getCharacter(id: string | null = "1011334") {
 		const ts = new Date().getTime().toString();
 		const hash = CryptoJS.MD5(ts + this.privateKey + this.publicKey).toString();
 
