@@ -2,6 +2,12 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.1.
 
+## ⚠️ Environment Configuration
+
+The environment files (e.g., `environment.ts`, `environment.prod.ts`) are not included in version control.
+
+To run the project locally, you need to create your own environment files by copying the example provided:
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.

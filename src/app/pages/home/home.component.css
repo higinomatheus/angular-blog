@@ -4,3 +4,8 @@
   flex-direction: row;
   justify-content: center;
 }
+
+.articles__others {
+  height: 400px;
+  overflow-y: scroll;
+}
